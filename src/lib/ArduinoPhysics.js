@@ -9,9 +9,9 @@ var ArduinoPhysics = function() {
         port = starbord = throttle;
         port += yaw;
         starbord -= yaw;
-        port = map(port);
-        starbord = map(starbord);
-        vertical = Math.round(exp(vertical)) + OFFSET;
+        port = Math.max(20, map(port));
+        starbord = Math.max(20, map(starbord));
+        vertical = Math.max(20, Math.round(exp(vertical)) + OFFSET);
         return {
             port: port,
             starbord: starbord,
