@@ -24,7 +24,17 @@ var KEYS = {
     position: 'lift',
     value: 1
   },
+  36: { // KeyPad-home (lift up)
+    command: 'command',
+    position: 'lift',
+    value: 1
+  },
   17: { //ctrl (lift down)
+    command: 'command',
+    position: 'lift',
+    value: -1
+  },
+  35: { // KeyPad-end (lift down)
     command: 'command',
     position: 'lift',
     value: -1
@@ -33,7 +43,15 @@ var KEYS = {
     command: 'tilt',
     value: 1
   },
+  33: { // KeyPad-PgUp (tilt up)
+    command: 'tilt',
+    value: 1
+  },
   65: { //A (tilt fwd)
+    command: 'tilt',
+    value: 0
+  },
+  12: { // KeyPad-5 (tilt fwd)
     command: 'tilt',
     value: 0
   },
@@ -41,11 +59,23 @@ var KEYS = {
     command: 'tilt',
     value: -1
   },
+  34: { // KeyPad-PgDown (tilt down)
+    command: 'tilt',
+    value: -1
+  },
   187: { //+ (brightness up)
      command: 'light',
      value: 1
   },
-  189: { //- (brightness down)
+  107: { // KeyPad-+ (brightness up)
+     command: 'light',
+     value: 1
+  },
+  109: { //- (brightness down)
+     command: 'light',
+     value: -1
+  },
+  189: { // KeyPad-- (brightness down)
      command: 'light',
      value: -1
   }
